@@ -2,22 +2,20 @@ a {
     text-decoration: none;
 }
 .catalog {
-    width: 1100px;
+    width: 1102px;
     height: 1000px;
-    background-color: #a4cfff;
 
 }
 .content_left {
     width: 250px;
     height: 1000px;
-    background-color: #9addff;
     float: left;
 }
 .content_right {
     width: 850px;
     height: 1000px;
-    background-color: #2dffb9;
     float: right;
+    border: 1px solid #cccccc;
 }
 .content_left .catalog_in {
     width: 250px;
@@ -25,5 +23,6 @@ a {
     text-align: center;
     line-height: 50px;
     border-bottom: 1px solid #aa69ff;
+    border-right: 1px solid #aa69ff;
     margin-bottom: 40px;
 }
