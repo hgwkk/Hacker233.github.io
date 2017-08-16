@@ -1,262 +1,38 @@
-body {
-    margin: 0px;
-    padding: 0px;
-    background-image: url("../images/body.jpg");
-    background-size: 100%;
-    background-attachment:fixed;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
-a{
-    text-decoration: none;
-}
-.header {
-    width: 1349px;
-    height: 50px;
-    background-color: #78d6ff;
-    background: rgba(56, 80, 92, 0.8);
-    position:fixed;
-    left:0;
-    top:0;
-    z-index: 99;
-}
-.header .header_left{
-    width: 200px;
-    height: 50px;
+
+.left {
+    height: 635px;
+    background-color: rgba(70, 37, 119, 0.8);
+    width: 310px;
     float: left;
-    text-align: center;
+    position: fixed;
+    padding-top: 150px;
 }
-.header .header_left span {
-    font-size: 20px;
-    font-family: "Microsoft YaHei";
+.left .left_content {
+    width: 220px;
+    height: 50px;
+    margin:0 auto;
+    margin-top: 20px;
+    border-bottom: 2px solid #3d2d63;
+}
+.left .left_content span {
     line-height: 50px;
-    font-weight: 800;
     color: white;
+    font-family: "Microsoft YaHei";
+    float: right;
+    font-size: 14px;
     letter-spacing: 5px;
 }
-.article {
-    width: 1200px;
-    height: 800px;
-    margin: 30px auto;
-    padding-top: 50px;
-}
-.article .search {
-    width: 1080px;
-    height: 90px;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 90px;
-}
-.article .search .search_txt{
-    width: 800px;
-    height: 50px;
-    border: none;
-    border-radius: 7px;
-    font-size: 20px;
-    color: white;
-    background:rgba(0,0,0,0.5);
-    padding-left: 160px;
-    box-sizing: border-box;
-}
-.article .search .search_btn {
-    width: 100px;
-    height: 50px;
-    border: none;
-    font-family: "Microsoft YaHei";
-    font-size: 20px;
-    font-weight: 800;
-    color: white;
-    letter-spacing: 10px;
-    border-radius: 5px;
-    margin-left: 15px;
-    background-color: #2b314c;
-    cursor: pointer;
-}
-.article .search .search_select {
-    width: 145px;
-    height: 50px;
-    position: absolute;
-    left: 214px;
-    top: 98px;
-    border: none;
-    border-radius: 7px;
-    font-size: 20px;
-    background: rgba(67, 114, 53, 0.5);
-    color: white;
-    text-align: center;
-    appearance:none;
-    -moz-appearance:none;
-    -webkit-appearance:none;
-    cursor: pointer;
-    border: 1px solid #376b5d;
-    background: url("../images/select1.png") no-repeat scroll right center transparent;
-}
-.article .search .search_select option {
-    color: black;
-}
-.article .article_left {
-    width: 300px;
-    height: 574px;
-    margin-left: 60px;
-    float: left;
-    padding-top: 30px;
-}
-.article .article_left .catlogo {
-    width: 300px;
-    height: 65px;
-    background-color: #1d0707;
-    text-align: center;
-    margin-top: -19px;
-    background:rgba(0,0,0,0.8);
-}
-.article .article_left .catlogo:hover{
-    background: rgb(49, 88, 79);
-}
-.article .article_left .catlogo p {
-    font-size: 20px;
-    font-weight: 800;
-    line-height: 60px;
-    font-family: "Microsoft YaHei";
-    letter-spacing: 5px;
-    color: white;
-}
-.article .article_left .catlogo a {
-    text-decoration: none;
-}
-.article .article_left .catlogo p:hover {
-    font-size:21px ;
-}
-.article .article_right {
-    width: 720px;
-    height: 527px;
-    background-color: #ffaf3d;
+.right {
+    width: 1039px;
+    height: 3000px;
+    background-color: rgba(57, 139, 134, 0.98);
     float: right;
-    margin-right: 60px;
-    margin-top: 30px;
-    overflow: hidden;
-    position: relative;
-    border: 1px solid #000;
-}
-.article .article_right ul img {
-    width: 720px;
-    height: 527px;
-}
-.article .article_right ul ,li {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-}
-.article .article_right ul li {
-    float: left;
-}
-#tips li {
-    margin: 5px;
-    border: 1px solid #f60;
-    width: 20px;
-    height: 20px;
-    line-height:20px;
-    text-align: center;
-    color: white;
-    cursor: pointer;
-}
-.active {
-    background: #f60;
-}
-#content {
-    width: 3600px;
-    position: absolute;
-    left: -1440px;
-}
-#tips {
-    position: absolute;
-    right: 20px;
-    bottom: 5px;
-}
-.bottom {
-    width: 1080px;
-    height: 2300px;
-    //background-color: rgba(57, 139, 134, 0.6);
-    margin: 0 auto;
-}
-.bottom .top1 {
-    width: 1080px;
-    height: 50px;
-    background-color: rgba(129, 59, 139, 0.7);
-    border-radius: 8px;
-}
-.bottom .top1 p {
-    color: rgba(255, 249, 255, 1);
-    font-size: 20px;
-    font-family: "Microsoft YaHei";
-    line-height: 50px;
-    margin-left: 30px;
-}
-.bottom .top1_content {
-    width: 1050px;
-    height: 300px;
-    background-color: rgba(0, 0, 0, 0.4);
-    margin: 0 auto;
-    border-radius: 5px;
-    padding-top: 40px;
-    position: relative;
-}
-.bottom .top1_content p {
-    height :40px;
-    border: 1px solid #ffffff;
-    margin: 4px;
-    line-height: 40px;
-    color: white;
-    width: 700px;
-    margin-left: 50px;
-    padding-left: 15px;
-    border-radius: 8px;
-}
-.bottom .top1_content p span {
-    float: right;
-    margin-right: 20px;
-    color: #24a500;
-}
-.bottom .top1_content .a_pan {
-    width: 1000px;
-    height: 300px;
-    background-color: rgba(96, 21, 119, 1);
-    position: absolute;
-    top: 15px;
-    left: 25px;
-    border-radius: 10px;
-    display: none;
-}
-.bottom .top1_content .a_span {
-    float: left;
-    display: block;
-    width: 100px;
-    text-align: right;
-}
-.bottom .top1_content .a_p {
-    width :700px;
-    height: 40px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-.bottom .top1_content .ipt_txt {
-    width: 40px;
-    text-align: center;
-    border: none;
-    margin-right: 20px;
-    border-radius: 6px;
-}
-.bottom .top1_content .ipt_btn {
-    border: none;
-    border-radius: 6px;
-}
-.bottom .top1_content .resert_btn {
-    width: 80px ;
-    height: 30px;
-    position: absolute;
-    top: 260px;
-    left: 690px;
-    border-radius: 6px;
-    background-color: rgba(43, 11, 54, 0.4);
-    color: white;
-    font-family: "Microsoft JhengHei";
-    border: none;
-    cursor: pointer;
 }
