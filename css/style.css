@@ -34,7 +34,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .right {
     width: 1039px;
-    height: 2840px;
+    height: 2740px;
     background-color: rgba(57, 139, 134, 0.98);
     float: right;
    box-sizing: inherit;
@@ -116,6 +116,24 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 .right .right_bottom {
     width: 1039px;
-    height: 300px;
+    height: 200px;
     background-color: rgba(119, 5, 81, 0.8);
+}
+.right .right_bottom  img{
+    width: 35px;
+    height: 35px;
+}
+.right .right_bottom .logo{
+    width: 800px;
+    height: 200px;
+    margin: 0 auto;
+}
+.right .right_bottom .logo ul {
+    list-style: none;
+    line-height: 200px;
+    margin-left: 220px;
+}
+.right .right_bottom .logo ul li {
+    float: left;
+    margin-right: 40px;
 }
