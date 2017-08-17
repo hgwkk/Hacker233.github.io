@@ -13,7 +13,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     width: 310px;
     float: left;
     position: fixed;
-    padding-top: 150px;
+    padding-top: 100px;
 }
 .left .left_content {
     width: 220px;
@@ -34,12 +34,76 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .right {
     width: 1039px;
-    height: 3000px;
+    height: 2890px;
     background-color: rgba(57, 139, 134, 0.98);
     float: right;
+   box-sizing: inherit;
 }
 .right .right_top {
     width: 1039px;
     height: 635px;
     background-color: rgba(68, 15, 119, 0.8);
+    position: relative;
+}
+.right .right_top .head_content {
+    width: 700px;
+    height: 580px;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.right .right_top .head_content h1{
+    font-size: 40px;
+    color: white;
+    font-family: "Microsoft YaHei";
+    font-weight:900;
+    letter-spacing: 12px;
+}
+.right .right_top .head_content hr {
+    width: 600px;
+    margin-top: 30px;
+    margin-left: 3px;
+}
+.right .right_top .head_content p {
+    font-size: 20px;
+    font-family: "Microsoft YaHei";
+    color: white;
+    margin-right: 100px;
+    margin-top: 40px;
+    line-height: 40px;
+}
+.right .right_top .head_content p span {
+    letter-spacing: 10px;
+    font-size: 25px;
+    font-family: "Bauhaus 93";
+}
+.right .right_top .head_more {
+    width: 260px;
+    height: 580px;
+    background-color: rgba(119, 25, 34, 0.8);
+    float: right;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+.right .right_center {
+    width: 1039px;
+    height: 635px;
+    background-color: rgba(99, 64, 119, 0.8);
+}
+.right .right_css {
+    width: 1039px;
+    height: 635px;
+    background-color: rgba(119, 0, 53, 0.8);
+}
+.right .right_js {
+    width: 1039px;
+    height: 635px;
+    background-color: rgba(32, 119, 107, 0.8);
+}
+.right .right_bottom {
+    width: 1039px;
+    height: 350px;
+    background-color: rgba(119, 5, 81, 0.8);
 }
