@@ -14,6 +14,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     float: left;
     position: fixed;
     padding-top: 100px;
+    z-index: 99;
 }
 .left .left_content {
     width: 220px;
@@ -21,6 +22,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     margin:0 auto;
     margin-top: 20px;
     border-bottom: 2px solid #3d2d63;
+    z-index: 99;
 }
 .left .left_content span {
     line-height: 50px;
@@ -37,13 +39,20 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     height: 2740px;
     background-color: rgba(57, 139, 134, 0.98);
     float: right;
-   box-sizing: inherit;
+    box-sizing: inherit;
 }
 .right .right_top {
     width: 1039px;
     height: 635px;
     background-color: rgba(68, 15, 119, 0.8);
     position: relative;
+}
+.right .right_top .logo_content{
+    width: 1039px;
+    height: 635px;
+    background-color: #77000b;
+    position: absolute;
+    left:1039px;
 }
 .right .right_top .head_content {
     width: 700px;
@@ -103,16 +112,43 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     width: 1039px;
     height: 635px;
     background-color: rgba(99, 64, 119, 0.8);
+    position: relative;
+}
+.right .right_center .html_content {
+    width: 1039px;
+    height: 635px;
+    background-color: #1b770d;
+    position: absolute;
+    left:1039px;
+    top: 0px;
 }
 .right .right_css {
     width: 1039px;
     height: 635px;
     background-color: rgba(119, 0, 53, 0.8);
+    position: relative;
+}
+.right .right_css .css_content{
+    width: 1039px;
+    height: 635px;
+    background-color: #006777;
+    position: absolute;
+    left:1039px;
+    top: 0px;
 }
 .right .right_js {
     width: 1039px;
     height: 635px;
     background-color: rgba(32, 119, 107, 0.8);
+    position: relative;
+}
+.right .right_js .js_content {
+    width: 1039px;
+    height: 635px;
+    background-color: #1b770d;
+    position: absolute;
+    left:1039px;
+    top: 0px;
 }
 .right .right_bottom {
     width: 1039px;
